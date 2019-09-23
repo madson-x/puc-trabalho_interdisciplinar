@@ -1,0 +1,55 @@
+#carouselExampleControls .carousel-inner{
+	/*height: 450px;*/
+}
+
+.galeria{
+	/*position:relativo;
+	
+	width:100%;*/
+	
+}
+#itemdestacada{
+	/*width:100%;*/
+	
+}
+
+#itemgaleria{
+	
+	margin:5px;
+}
+
+#itemgaleria:hover {opacity:0.8;
+
+}
+
+.footer{
+	background:#4B578A;
+	
+	padding:10px;
+	
+}
+
+.menu
+{
+	background:#A9B1CF
+	
+	
+}
+
+#linkmenu{ color:#fff;
+}
+
+#itemmenu{
+	
+	
+}
+
+#itemmenu:hover {background:#328892;
+
+
+}
+
+#itemlogo{
+	
+	width:200px;
+}
