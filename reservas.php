@@ -42,14 +42,19 @@
 	<!-- Fim Logo e menu -->
 
 <div class="container my-2">
-<h2 style="color:#555">Suas reservas no Hotel Gerais</h2>
+
+<?php
+echo'
+<h3 class="my-3" style="color:#555; "> Olá, '; echo "$nomeuser"; echo '</h3>
+';?>
+<h5 style="color:#555">Veja suas reservas no Hotel Gerais</h5>
+
 <hr>
 <div class="row">
 <div class="col-lg-4 col-12 my-3" style="float:left">
 
 <?php
 echo'
-<h4 class="my-3" style="color:#555; "> Olá, '; echo "$nomeuser"; echo '</h4>
 <p> Veja detalhes da sua reserva no <b>Quarto '; echo "$tipoquarto"; 
 echo '</b><br><br> Data de checkin: <b>'; echo"$datacheckin"; 
 echo'</b><br> Data de checkout: <b>'; echo"$datacheckout"; 

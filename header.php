@@ -53,7 +53,7 @@
     <a class="nav-link active" id="linkmenu"  href="index.php">Início</a>
   </li>
   <li class="nav-item" id="itemmenu">
-    <a class="nav-link" id="linkmenu" href="#reservar">Reservar</a>
+    <a class="nav-link" id="linkmenu" href="index.php#reservar">Reservar</a>
   </li>
   <li class="nav-item" id="itemmenu">
     <a class="nav-link" id="linkmenu" href="galeria.php">Galeria</a>
@@ -66,15 +66,10 @@
   </li>
   
    <!-- Button trigger modal -->
-			
-	
-				
-
-		
-  
+	  
   <?php
   
-  $validalogin = 'true';
+  $validalogin = 'funcionario';
 
   $nomeuser = 'Eliã Faustino';
 
@@ -83,26 +78,28 @@
   $datacheckout = '15/08/2020';
   $valorreserva = '859,60';
 
-	if ($validalogin == 'false') {
+	if ($validalogin == 'funcionario') {
 	
 	echo '
-  <li class="nav-item dropdown" id="itemmenu">
+	<li class="nav-item dropdown" id="itemmenu">
         <a class="nav-link dropdown-toggle" href="#" id="linkmenu" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-         <i class="fa fa-user"></i> Olá, visitante
+         <i class="fa fa-user"></i>'; echo " Olá, $nomeuser"; echo'
         </a>
         <div class="dropdown-menu" id="visitante" aria-labelledby="navbarDropdown">
 		
-          <a class="dropdown-item"  href="#logarhome" data-toggle="modal" data-target="#logarhome">Login</a>
-		  
-		  <a class="dropdown-item" href="cadastro.php">Cadastrar</a>
-		  
+          
+		      <a class="dropdown-item" href="cadastraacomodacoes.php">Cadastrar acomodação</a>
+          
+          <a class="dropdown-item" href="verificareservas.php">Verificar reservas</a>
+		  <div class="dropdown-divider"></div>
+          <a class="dropdown-item" href="logof.php">Sair</a>
         </div>
-      </li>
+      </li>	
 ';
 	 
 	 } 
 	 
-	 else 
+	 elseif ($validalogin == 'cliente') 
 	 {
 	 echo '
 	 <li class="nav-item dropdown" id="itemmenu">
@@ -115,11 +112,37 @@
 		      <a class="dropdown-item" href="cadastro.php">Meu Cadastro</a>
           
           <a class="dropdown-item" href="reservas.php">Minhas Reservas</a>
-
+		  <div class="dropdown-divider"></div>
           <a class="dropdown-item" href="logof.php">Sair</a>
         </div>
       </li>	';
-	 } ?>
+	 }
+
+	else
+	 {
+	 echo '
+	 
+	 <li class="nav-item dropdown" id="itemmenu">
+        <a class="nav-link dropdown-toggle" href="#" id="linkmenu" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+         <i class="fa fa-user"></i> Olá, visitante
+        </a>
+        <div class="dropdown-menu" id="visitante" aria-labelledby="navbarDropdown">
+		
+          <a class="dropdown-item"  href="#logarhome" data-toggle="modal" data-target="#logarhome">Login</a>
+		  
+		  <a class="dropdown-item" href="cadastro.php">Cadastrar</a>
+		  
+        </div>
+      </li>
+	 
+	 
+	 
+	 
+	 
+	 ';
+	 }
+
+	 ?>
 	
   
  <!-- Pop Login -->

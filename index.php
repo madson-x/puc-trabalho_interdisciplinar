@@ -125,7 +125,7 @@
       </label>
       <div class="input-group">
        <div class="input-group-addon">
-        <i class="fa fa-sort-numeric-asc">
+        <i class="fa fa-user">
         </i>
        </div>
        <input class="form-control" id="number1" name="number1" type="text"/>
