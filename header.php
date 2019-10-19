@@ -72,6 +72,7 @@
   $validalogin = 'funcionario';
 
   $nomeuser = 'Eliã Faustino';
+  $nomeuser1 = 'Madson Oliveira';
 
   $tipoquarto = 'Luxo';
   $datacheckin = '10/08/2020';
@@ -83,7 +84,7 @@
 	echo '
 	<li class="nav-item dropdown" id="itemmenu">
         <a class="nav-link dropdown-toggle" href="#" id="linkmenu" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-         <i class="fa fa-user"></i>'; echo " Olá, $nomeuser"; echo'
+         <i class="fa fa-user-plus"></i>'; echo " Olá, $nomeuser"; echo'
         </a>
         <div class="dropdown-menu" id="visitante" aria-labelledby="navbarDropdown">
 		
@@ -104,7 +105,7 @@
 	 echo '
 	 <li class="nav-item dropdown" id="itemmenu">
         <a class="nav-link dropdown-toggle" href="#" id="linkmenu" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-         <i class="fa fa-user"></i>'; echo " Olá, $nomeuser"; echo'
+         <i class="fa fa-user"></i>'; echo " Olá, $nomeuser1"; echo'
         </a>
         <div class="dropdown-menu" id="visitante" aria-labelledby="navbarDropdown">
 		

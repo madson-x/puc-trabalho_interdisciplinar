@@ -79,21 +79,14 @@
      </div>
 	 
 	 <div class="form-group form-group-lg  col-12" >
-      <label class="control-label requiredField" for="url">
-       Link da foto
-       <span class="asteriskField">
-        *
-       </span>
-      </label>
       <div class="input-group">
-       <div class="input-group-addon">
-        <i class="fa fa-link">
-        </i>
-       </div>
-       <input class="form-control" id="url" name="url" type="text"/>
+        <input type="file" class="custom-file-input" id="validatedCustomFile" required>
+		<label class="custom-file-label" for="validatedCustomFile">Selecionar fotos da acomodação</label>
+		<div class="invalid-feedback">Formato não suportado, formatos aceito .jpg .jpeg .png</div>
       </div>
      </div>
-     <div class="form-group form-group-lg col-lg-6 col-12">
+	 
+	 <div class="form-group form-group-lg col-lg-6 col-12">
       <label class="control-label requiredField" for="descricao">
        Descrição
        <span class="asteriskField">
@@ -141,6 +134,8 @@
        </div>
       </div>
      </div>
+	 
+	 
      
      <div class="form-group">
       <div>
@@ -149,6 +144,17 @@
        </button>
       </div>
      </div>
+	 
+	 <div class="form-group">
+      <div>
+	  <a href="http://localhost/hotelgerais/">
+       <button href="reservar-quarto.php" class="btn  btn-danger btn-lg" style="float:right; margin-right:10px" type="button"  type="submit">
+        Voltar
+       </button></a>
+      </div>
+     </div>
+	 
+	 
     </form>
    </div>
   </div>

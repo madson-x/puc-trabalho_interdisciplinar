@@ -41,11 +41,19 @@
 
 <!-- Fim Logo e menu -->
 
-<div class="container">
+<!-- Banner -->
+
+<?php
+			include ('banners.php');
+			
+	?>
+<!-- Fim Banner -->
+
+<div class="my-3 container" style="text-align:center">
 
 <h2 style="color:#555">Um pouco mais sobre o Hotel Gerais</h2><br>
 
-<p>A Equipe do Hotel Gerais estará à sua disposição para tornar sua estadia a mais prazerosa e relaxante possível.<br>
+<p style="text-align:left">A Equipe do Hotel Gerais estará à sua disposição para tornar sua estadia a mais prazerosa e relaxante possível.<br>
 
 O Hotel Gerais é um hotel para viver a dois, implantado com cuidado e respeito à preservação ambiental numa propriedade de 24.000m², a 1750m de altitude, na Serra da Mantiqueira. As instalações são compostas por 17 Moradas e uma Sede com infraestrutura completa, distribuídas no parque da propriedade assegurando privacidade e vista privilegiada para a Serra.<br>
 

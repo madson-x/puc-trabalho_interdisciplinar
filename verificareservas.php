@@ -47,10 +47,38 @@
 echo'
 <h5 class="my-3" style="color:#555; "> Olá, '; echo "$nomeuser"; echo '</h5>
 ';?>
-<h6 style="color:#555">Veja as reservas ativas no Hotel Gerais</h6>
+<h6 style="color:#555">Buscar reservas no Hotel Gerais</h6>
 
-<hr>
 
+<div class="bootstrap-iso my-4">
+ <div class="container-fluid">
+  <div class="row">
+   <div class=" col-12	">
+	<form class="form-group" method="post">
+	<div class="form-group col-12 col-lg-4 col-sm-12" style="float:left">
+      <div class="input-group">
+       <div class="input-group-addon">
+        <i class="fa fa-search"> 
+        </i>
+       </div>
+       <input class="form-control" id="buscareserva" name="buscareserva" type="text" placeholder="Digite o CPF para buscar"/>
+      </div>
+     </div>
+	 <div class="form-group" style="float:left">
+       <button href="reservar-quarto.php" class="btn  btn-custom btn" style="float:right; margin-right:10px" type="button"  type="submit">
+        Buscar</button>
+        </div>
+		<div class="form-group" style="float:left">
+       <button href="reservar-quarto.php" class="btn  btn-success btn" style="float:right; margin-right:10px" type="button"  type="submit">
+        Listar reservas do dia</button>
+        </div>
+	</form>
+	
+	</div>
+	
+  </div>
+ </div>
+</div>
 <table class="table table-hover table-striped">
   <thead>
     <tr>

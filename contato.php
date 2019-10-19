@@ -31,7 +31,7 @@
     <title>Fale Conosco - Hotel</title>
   </head>
   
-  <body>
+<body>
   
      <!-- Logo e menu -->
 
@@ -41,7 +41,82 @@
 	?>
 	<!-- Fim Logo e menu -->
 
+<div class="my-3 container">
+<div class="col-12 col-sm-6" style="text-align:center; float:left; padding:0px 30px 0px 30px">
 
+<h5><p style="font-size:40px; color:#2e8b57"><i class="fa fa-comments"></i></p> Adoraríamos conhecê-lo pessoalmente ou pela Web!</h5>
+<hr>
+<b><p>Horário de Atendimento</p>
+<p>Segunda a domingo de 07:00h às 21:00h</p></b>
+<hr>
+
+<p><b>Endereço:</b> Avenida Suiça 540 – Monte Verde/MG</p>
+<p><b>Telefones:</b> (31) 3433-9396</p>
+<p><b>Whatsapp:</b> (31) 99299-9396</p>
+<b>Email:</b> 
+<a href="mailto:contato@hotelgerais.com.br">contato@hotelgerais.com.br</a>
+</div>
+
+<!-- HTML Form (wrapped in a .bootstrap-iso div) -->
+<div class="bootstrap-iso" >
+ <div class="container-fluid">
+  <div class="row">
+   <div class="col-12 ">
+    <form method="post">
+     <div class="form-group ">
+      <label class="control-label requiredField" for="name">
+       Nome
+       <span class="asteriskField">
+        *
+       </span>
+      </label>
+      <div class="input-group">
+       <div class="input-group-addon">
+        <i class="fa fa-user">
+        </i>
+       </div>
+       <input class="form-control" id="name" name="name" placeholder="Nome" type="text"/>
+      </div>
+     </div>
+     <div class="form-group ">
+      <label class="control-label requiredField" for="email">
+       E-mail
+       <span class="asteriskField">
+        *
+       </span>
+      </label>
+      <div class="input-group">
+       <div class="input-group-addon">
+        <i class="fa fa-envelope-o">
+        </i>
+       </div>
+       <input class="form-control" id="email" name="email" placeholder="E-mail" type="text"/>
+      </div>
+     </div>
+     <div class="form-group ">
+      <label class="control-label requiredField" for="descricao">
+       Mensagem
+       <span class="asteriskField">
+        *
+       </span>
+      </label>
+      <textarea class="form-control" cols="40" id="descricao" name="descricao" placeholder="Digite sua mensagem" rows="5"></textarea>
+     </div>
+     <div class="form-group">
+      <div>
+       <button class="btn btn-custom btn-lg" name="submit" type="submit">
+        Enviar
+       </button>
+      </div>
+     </div>
+    </form>
+   </div>
+  </div>
+ </div>
+</div>
+
+
+</div>
 
 
 
