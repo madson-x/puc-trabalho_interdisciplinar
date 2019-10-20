@@ -50,7 +50,7 @@
  <div class="container">
   <div class="row">
    <div class="col-12">
-    <form method="post">
+    <form id="cadcli">
      <div class="form-group col-lg-6 col-12 form-group-lg" style="float:left">
       <label class="control-label requiredField" for="name">
        Nome
@@ -63,7 +63,7 @@
         <i class="fa fa-user">
         </i>
        </div>
-       <input class="form-control" id="name" name="name" type="text"/>
+       <input class="form-control" required id="name" name="name" type="text"/>
       </div>
      </div>
      <div class="form-group col-lg-6 col-12 form-group-lg" style="float:left">
@@ -78,7 +78,7 @@
         <i class="fa fa-envelope-o">
         </i>
        </div>
-       <input class="form-control" id="email" name="email" type="text"/>
+       <input class="form-control" required id="email" name="email" type="email"/>
       </div>
      </div>
      <div class="form-group col-lg-6 col-12 form-group-lg" style="float:left" >
@@ -93,7 +93,7 @@
         <i class="fa fa-phone">
         </i>
        </div>
-       <input class="form-control" id="tel" name="tel" type="text"/>
+       <input class="form-control" required id="tel" name="tel" type="tel"/>
       </div>
      </div>
 	 
@@ -110,7 +110,7 @@
         <i class="fa fa-expeditedssl">
         </i>
        </div>
-       <input class="form-control" id="exampleInputPassword1" type="password"  name="password" />
+       <input class="form-control" required id="senha" type="password" minlength="8" maxlength="16" name="password" />
       </div>
      </div>
 	 
@@ -197,6 +197,6 @@
     <?php
 			include ('footer.php');
 		  ?>
-
+<script src="javascript/cadastro.js"></script>
 </body>
 </html>
