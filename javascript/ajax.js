@@ -1,9 +1,20 @@
 const API='http://tipuc6periodo.herokuapp.com/';
 
+
+function get(url){
+    return $.ajax({
+        type: "get",
+        url: API+url,
+        headers:{"Authorization":"Bearer "+localStorage.getItem("token")},
+        dataType: "json"
+    }) .fail(erro);
+
+}
+
 function post(url, dados){
     return $.ajax({
         type: "post",
-        headers:{"Authorization":localStorage.getItem("token")},
+        headers:{"Authorization":"Bearer "+localStorage.getItem("token")},
         url: API+url,
         data: dados,
         dataType: "json",
@@ -23,16 +34,4 @@ function erro(data) {
         content: msg.erro
     });
     
-}
-
-function login(usuario, senha) {
-    $.ajax({
-        type: "post",
-        url: API+'login',
-        data: {usuario:usuario,senha:senha},
-        dataType: "json"  
-    })  .fail(erro)
-        .done(function (resposta) {
-        localStorage.setItem('token',resposta.token);
-      });
 }

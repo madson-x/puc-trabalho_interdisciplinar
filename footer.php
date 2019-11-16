@@ -5,3 +5,5 @@
 	  </div>
 	  <script src="javascript/ajax.js"></script>
 	  <script src="javascript/jquery-confirm.js"></script>
+	  <script src="javascript/jquery.mask.min.js"></script>
+	  <script src="javascript/login.js"></script>

@@ -50,7 +50,7 @@
  <div class="container">
   <div class="row">
    <div class="col-12">
-    <form id="cadcli">
+    <form id="cadcli" autocomplete="off">
      <div class="form-group col-lg-6 col-12 form-group-lg" style="float:left">
       <label class="control-label requiredField" for="name">
        Nome
@@ -66,6 +66,23 @@
        <input class="form-control" required id="name" name="name" type="text"/>
       </div>
      </div>
+     
+     <div class="form-group col-lg-6 col-12 form-group-lg" style="float:left">
+      <label class="control-label requiredField" for="email">
+       CPF
+       <span class="asteriskField">
+        *
+       </span>
+      </label>
+      <div class="input-group">
+       <div class="input-group-addon">
+        <i class="fa fa-user">
+        </i>
+       </div>
+       <input class="form-control" required id="cpf" name="cpf" type="tel"/>
+      </div>
+     </div>
+
      <div class="form-group col-lg-6 col-12 form-group-lg" style="float:left">
       <label class="control-label requiredField" for="email">
        Email
@@ -81,22 +98,23 @@
        <input class="form-control" required id="email" name="email" type="email"/>
       </div>
      </div>
-     <div class="form-group col-lg-6 col-12 form-group-lg" style="float:left" >
-      <label class="control-label requiredField" for="tel">
-       Telefone
+
+     <div class="form-group col-lg-6 col-12 form-group-lg" style="float:left">
+      <label class="control-label requiredField" for="email">
+       Data de nascimento
        <span class="asteriskField">
         *
        </span>
       </label>
       <div class="input-group">
        <div class="input-group-addon">
-        <i class="fa fa-phone">
+        <i class="fa fa-calendar-o">
         </i>
        </div>
-       <input class="form-control" required id="tel" name="tel" type="tel"/>
+       <input class="form-control" required id="dnascimento" name="dnascimento" type="date"/>
       </div>
      </div>
-	 
+
 	 
 	 <div class="form-group col-lg-6 col-12 form-group-lg" style="float:left" >
       <label class="control-label requiredField" for="InputPassword1">
@@ -113,20 +131,62 @@
        <input class="form-control" required id="senha" type="password" minlength="8" maxlength="16" name="password" />
       </div>
      </div>
+
+     <div class="form-group col-lg-6 col-12 form-group-lg" style="float:left" >
+      <label class="control-label requiredField" for="InputPassword1">
+       Confirme a Senha
+       <span class="asteriskField">
+        *
+       </span>
+      </label>
+      <div class="input-group">
+       <div class="input-group-addon">
+        <i class="fa fa-expeditedssl">
+        </i>
+       </div>
+       <input class="form-control" required id="senha" type="password" minlength="8" maxlength="16" name="password" />
+      </div>
+     </div>
+
+     <div class="form-group col-lg-6 col-12 form-group-lg" style="float:left" >
+      <label class="control-label requiredField" for="tel">
+       Telefone
+       <span class="asteriskField">
+        *
+       </span>
+      </label>
+      <div class="input-group">
+       <div class="input-group-addon">
+        <i class="fa fa-phone">
+        </i>
+       </div>
+       <input class="form-control" required id="tel" name="tel" type="tel"/>
+      </div>
+     </div>
 	 
-	 
-	 
-	 
-     <div class="form-group col-lg-8 col-12 form-group-lg" style="float:left">
+     <div class="form-group col-lg-6 col-12 form-group-lg" style="float:left">
       <label class="control-label " for="text">
-       Endereço
+       CEP
       </label>
       <div class="input-group">
        <div class="input-group-addon">
         <i class="fa fa-home">
         </i>
        </div>
-       <input class="form-control" id="text" name="text" type="text"/>
+       <input class="form-control" id="cep" name="cep"  type="tel" required/>
+      </div>
+     </div>
+	 	 
+     <div class="form-group col-lg-8 col-12 form-group-lg" style="float:left">
+      <label class="control-label " for="text">
+       Endereço
+      </label>
+      <div class="input-group">
+       <div class="input-group-addon">
+        <i class="fa fa-map-marker">
+        </i>
+       </div>
+       <input class="form-control" id="endereco" name="endereco" type="text"/>
       </div>
      </div>
      <div class="form-group col-lg-4 col-12 form-group-lg" style="float:left">
@@ -138,7 +198,7 @@
         <i class="fa fa-sort-numeric-asc">
         </i>
        </div>
-       <input class="form-control" id="number1" name="number1" type="text"/>
+       <input class="form-control" id="numero" name="numero" type="tel" pattern="^\d{1,5}$"/>
       </div>
      </div>
      <div class="form-group col-lg-4 col-12  form-group-lg" style="float:left">
@@ -150,7 +210,7 @@
         <i class="fa fa-home">
         </i>
        </div>
-       <input class="form-control" id="text1" name="text1" type="text"/>
+       <input class="form-control" id="complemento" name="complemento" type="text"/>
       </div>
      </div>
      <div class="form-group col-lg-4 col-12 form-group-lg" style="float:left">
@@ -162,7 +222,7 @@
         <i class="fa fa-map-signs">
         </i>
        </div>
-       <input class="form-control" id="text2" name="text2" type="text"/>
+       <input class="form-control" id="bairro" name="bairro" type="text"/>
       </div>
      </div>
      <div class="form-group col-lg-4 col-12 form-group-lg" style="float:left">
@@ -174,7 +234,7 @@
         <i class="fa fa-map-o">
         </i>
        </div>
-       <input class="form-control" id="name1" name="name1" type="text"/>
+       <input class="form-control" id="cidade" name="cidade" type="text"/>
       </div>
      </div>
      <div class="form-group">

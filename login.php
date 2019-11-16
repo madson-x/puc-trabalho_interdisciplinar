@@ -26,7 +26,7 @@
   <div class="menu">
   <ul class="nav justify-content-center" >
   <li class="nav-item" id="itemmenu">
-    <a class="nav-link active" id="linkmenu"  href="index.html">Início</a>
+    <a class="nav-link active" id="linkmenu"  href="index.php">Início</a>
   </li>
   <li class="nav-item" id="itemmenu">
     <a class="nav-link" id="linkmenu" href="index.html#reservar">Reservar</a>
