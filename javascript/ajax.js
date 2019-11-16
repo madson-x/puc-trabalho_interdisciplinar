@@ -1,4 +1,4 @@
-const API='http://tipuc6periodo.herokuapp.com/';
+const API='https://tipuc6periodo.herokuapp.com/';
 
 
 function get(url){
