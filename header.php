@@ -112,10 +112,10 @@
 //   $nomeuser = 'Eliã Faustino';
 //   $nomeuser1 = 'Madson Oliveira';
 
-//   $tipoquarto = 'Luxo';
-//   $datacheckin = '10/08/2020';
-//   $datacheckout = '15/08/2020';
-//   $valorreserva = '859,60';
+   $tipoquarto = 'Luxo';
+   $datacheckin = '10/08/2020';
+   $datacheckout = '15/08/2020';
+   $valorreserva = '859,60';
 
 // 	if ($validalogin == 'funcionario') {
 	
