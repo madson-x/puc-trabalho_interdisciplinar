@@ -71,7 +71,7 @@
    <div class=" col-12">
     <form method="post">
      <div class="form-group col-12 col-lg-4 col-sm-12" style="float:left">
-      <label class="control-label requiredField" style="color:#555" for="date1">
+      <label class="control-label requiredField" style="color:#555" for="dateentrada">
        Data incial
        <span class="asteriskField">
         *
@@ -82,11 +82,11 @@
         <i class="fa fa-calendar">
         </i>
        </div>
-       <input class="form-control" id="date1" name="date1" placeholder="DD/MM/AAAA" type="text"/>
+       <input class="form-control" id="dataentrada" name="dateentrada" type="date"/>
       </div>
      </div>
      <div class="form-group col-12 col-lg-4 col-sm-12 " style="float:left">
-      <label class="control-label requiredField" style="color:#555" for="date2">
+      <label class="control-label requiredField" style="color:#555" for="datesaida">
        Data Final
        <span class="asteriskField">
         *
@@ -97,11 +97,11 @@
         <i class="fa fa-calendar">
         </i>
        </div>
-       <input class="form-control" id="date2" name="date2" placeholder="DD/MM/AAAA" type="text"/>
+       <input class="form-control" id="datasaida" name="datesaida" type="date"/>
       </div>
      </div>
      <div class="form-group col-12 col-lg-4 col-sm-12" style="float:left">
-      <label class="control-label requiredField" style="color:#555" for="number1">
+      <label class="control-label requiredField" style="color:#555" for="hospedes">
        Quandidade de Hospedes
        <span class="asteriskField">
         *
@@ -112,7 +112,7 @@
         <i class="fa fa-user">
         </i>
        </div>
-       <input class="form-control" id="number1" name="number1" type="text"/>
+       <input class="form-control" id="hospedes" name="hospedes" type="tel"/>
       </div>
      </div>
      <div class="form-group col-12">
