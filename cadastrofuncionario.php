@@ -28,7 +28,7 @@
     <meta name="msapplication-TileImage" content="img/favicon/ms-icon-144x144.png">
     <meta name="theme-color" content="#ffffff">
 
-    <title>Realizar cadastro de funcionário</title>
+    <title>Cadastro de funcionário</title>
   </head>
   
   <body>
