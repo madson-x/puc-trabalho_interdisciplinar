@@ -50,7 +50,7 @@
  <div class="container">
   <div class="row">
    <div class="col-12">
-    <form id="cadcli" autocomplete="off">
+    <form id="cadfun" autocomplete="off">
      <div class="form-group col-lg-6 col-12 form-group-lg" style="float:left">
       <label class="control-label requiredField" for="name">
        Nome
@@ -117,13 +117,13 @@
 	 
 	  <div class="form-group col-lg-4 col-12 form-group-lg" style="float:left" >
 	 
-	 <label class="control-label requiredField" for="select">
+	 <label class="control-label requiredField" for="departamento">
        Departamento
        <span class="asteriskField">
         *
        </span>
       </label>
-      <select class="select form-control" id="select" name="departamento">
+      <select class="select form-control" id="departamento" name="departamento">
        <option value="Gerente">
         Gerencia
        </option>
