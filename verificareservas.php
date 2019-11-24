@@ -30,9 +30,11 @@
 
     <title>Minhas Reservas - Hotel</title>
   </head>
+  
   <?php
-	$sql = "select * from reservas";
+	$consulta = "select * from reservas";
 	?>
+	
   <body>
   
      <!-- Logo e menu -->
@@ -98,9 +100,9 @@ echo'
 	  
     </tr>
   </thead>
-  <?php
+	<?php
 	  
-	  $query = mysqli_query($conexao,$sql);
+	  $query = mysqli_query($consulta);
 	  
 	  while($dados = mysqli_fetch_array($query)){
 		  
