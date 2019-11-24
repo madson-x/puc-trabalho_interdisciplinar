@@ -74,15 +74,24 @@
 		 <span id="nomeuser"></span>
         </a>
         <div class="dropdown-menu" id="menufuncionario" aria-labelledby="navbarDropdown">
-			<a class="dropdown-item menufuncionario "  style="display:none" href="cadastraacomodacoes.php">Cadastrar acomodação</a>
-		  <a class="dropdown-item menufuncionario " style="display:none" href="verificareservas.php">Verificar reservas</a>
+		  <a class="dropdown-item menufuncionario" style="display:none" href="cadastraacomodacoes.php">Cadastrar acomodação</a>
+		  <a class="dropdown-item menufuncionario" style="display:none" href="cadastrofuncionario.php">Cadastrar Funcionário</a>
+		  <a class="dropdown-item menufuncionario" style="display:none" href="verificareservas.php">Verificar reservas</a>
+		  
 		  <a class="dropdown-item menucliente" style="display:none" href="cadastro.php">Meu Cadastro</a>          
-           <a class="dropdown-item menucliente" style="display:none" href="reservas.php">Minhas Reservas</a>
+          <a class="dropdown-item menucliente" style="display:none" href="reservas.php">Minhas Reservas</a>
+		  
+		  <div class="dropdown-divider"></div>
+		  <a class="dropdown-item menucliente" style="display:none" href="cadastraacomodacoes.php">Cadastrar acomodação</a>
+		  <a class="dropdown-item menucliente" style="display:none" href="cadastrofuncionario.php">Cadastrar Funcionário</a>
+		  <a class="dropdown-item menucliente" style="display:none" href="verificareservas.php">Verificar reservas</a>
+		  
 		  <div class="dropdown-divider"></div>
           <a class="dropdown-item" id="logof">Sair</a>
 		</div>
-	  </li>	
+	 </li>	
 	  
+	  	  
 	  <li class="nav-item dropdown" id="externo">
          <a class="nav-link dropdown-toggle" href="#" id="linkmenu" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
           <i class="fa fa-user"></i> Olá, visitante
