@@ -28,7 +28,7 @@
     <meta name="msapplication-TileImage" content="img/favicon/ms-icon-144x144.png">
     <meta name="theme-color" content="#ffffff">
 
-    <title>Realizar cadastro</title>
+    <title>Realizar cadastro de funcionário</title>
   </head>
   
   <body>
@@ -45,7 +45,7 @@
 
 
 <!-- HTML Form (wrapped in a .bootstrap-iso div) -->
-<h2 style="color:#555; text-align:center">Cadastrar</h2>
+<h2 style="color:#555; text-align:center">Cadastrar Funcionário</h2>
 <div class="bootstrap-iso my-3">
  <div class="container">
   <div class="row">
