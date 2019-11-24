@@ -125,7 +125,7 @@
       </label>
       <select class="select form-control" id="select" name="select">
        <option value="Gerente">
-        Gerente
+        Gerencia
        </option>
        <option value="Suporte">
         Suporte
