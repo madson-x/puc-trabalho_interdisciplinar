@@ -123,7 +123,7 @@
         *
        </span>
       </label>
-      <select class="select form-control" id="select" name="select">
+      <select class="select form-control" id="select" name="departamento">
        <option value="Gerente">
         Gerencia
        </option>
@@ -282,6 +282,6 @@
     <?php
 			include ('footer.php');
 		  ?>
-<script src="javascript/cadastro.js"></script>
+<script src="javascript/cadastrofuncionario.js"></script>
 </body>
 </html>
