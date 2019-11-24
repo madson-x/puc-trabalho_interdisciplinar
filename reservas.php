@@ -43,10 +43,9 @@
 
 <div class="container my-2">
 
-<?php
-echo'
-<h3 class="my-3" style="color:#555; "> Olá, '; echo "$nomeuser1"; echo '</h3>
-';?>
+
+<h3 class="my-3" style="color:#555; "> Olá, <span id="nomeuser"></span> </h3>
+
 <h5 style="color:#555">Veja suas reservas no Hotel Gerais</h5>
 
 <hr>
