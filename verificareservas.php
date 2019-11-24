@@ -31,10 +31,6 @@
     <title>Minhas Reservas - Hotel</title>
   </head>
   
-  <?php
-	$consulta = "select * from reservas";
-	?>
-	
   <body>
   
      <!-- Logo e menu -->
@@ -47,9 +43,10 @@
 
 <div class="container my-2">
 
-
-<h5 class="my-3" style="color:#555; "> Olá, <span id="nomeuser"></span></h5>
-
+<?php
+echo'
+<h5 class="my-3" style="color:#555; "> Olá, '; echo "$nomeuser"; echo '</h5>
+';?>
 <h6 style="color:#555">Buscar reservas no Hotel Gerais</h6>
 
 
@@ -86,28 +83,51 @@
   <thead>
     <tr>
       <th scope="col">#</th>
-      
+      <th scope="col">Hospede</th>
+	  <th scope="col">Quantidade de hospedes</th>
       <th scope="col">Quarto</th>
 	  <th scope="col">Check-in</th>
 	  <th scope="col">Check-out</th>
       <th scope="col">Valor</th>
-	  <th scope="col">Acomodação</th>
+	  <th scope="col">Situação</th>
 	  <th scope="col">Observações</th>
-	  <th scope="col">Quantidade de hospedes</th>
-	  <th scope="col">Hospede</th>
-	 
-	  
     </tr>
   </thead>
-	<?php
-	  
-	  $query = mysqli_query($consulta);
-	  
-	  while($dados = mysqli_fetch_array($query)){
-		  
-	  ?>
-  
-  
+  <tbody>
+    <tr>
+      <th scope="row">1</th>
+      <td>Eliã Faustino</td>
+      <td>3</td>
+      <td>Luxo</td>
+	  <td>10/11/2019</td>
+      <td>15/10/2019</td>
+      <td>950,00</td>
+	   <td>Pago</td>
+      <td>Berço para bebê</td>
+    </tr>
+    <tr>
+      <th scope="row">2</th>
+     <td>Madson Oliveira</td>
+      <td>2</td>
+      <td>Luxo</td>
+	  <td>20/11/2019</td>
+      <td>24/10/2019</td>
+      <td>700,00</td>
+	   <td>Pago</td>
+      <td>-</td>
+    </tr>
+    <tr>
+      <th scope="row">3</th>
+      <td>Alice Quadros</td>
+      <td>3</td>
+      <td>Economico</td>
+	  <td>10/12/2019</td>
+      <td>15/12/2019</td>
+      <td>550,00</td>
+	   <td>Pago</td>
+      <td>Berço para bebê</td>
+    </tr>
+  </tbody>
 </table>
 
 
