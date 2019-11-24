@@ -72,7 +72,7 @@
     <form method="post">
      <div class="form-group col-12 col-lg-4 col-sm-12" style="float:left">
       <label class="control-label requiredField" style="color:#555" for="dateentrada">
-       Data incial
+       Check-In
        <span class="asteriskField">
         *
        </span>
@@ -87,7 +87,7 @@
      </div>
      <div class="form-group col-12 col-lg-4 col-sm-12 " style="float:left">
       <label class="control-label requiredField" style="color:#555" for="datesaida">
-       Data Final
+       Check-Out
        <span class="asteriskField">
         *
        </span>
