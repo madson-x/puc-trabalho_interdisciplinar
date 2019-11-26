@@ -97,7 +97,7 @@ echo'</b> <p>';
         <h5 class="card-title">Confira os detalhes do Quarto Luxo</h5>
          <p class="card-text"><small class="text-muted">2 Pessoas - Wifi - TV 32" - Frigobar - Cama Casal King - Calefação - Ar condicionado - Hidro</small></p>
 		<button onclick="location.href='#cancelareserva'" data-toggle="modal" data-target="#cancelareserva" type="submit" class="btn btn-secondary">Cancelar Reserva</button>
-		<button onclick="location.href='#alterarreserva'" data-toggle="modal" data-target="#alterarreserva" type="submit" class="btn btn-primary">Alterar Reserva</button>
+		<button onclick="location.href='#alterareserva'" data-toggle="modal" data-target="#alterareserva" type="submit" class="btn btn-primary">Alterar Reserva</button>
 
 		<!-- Pop Cancela -->
 		<div class="modal fade" id="cancelareserva" tabindex="-1" role="dialog" aria-labelledby="cancelareserva" aria-hidden="true">
@@ -138,6 +138,106 @@ echo'</b> <p>';
 					<div class="modal-content">
 					  <div class="modal-header">
 						<h5 class="modal-title" id="confirmacancelamento">Solicitação de cancelamento registrado.</h5>
+						<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+						  <span aria-hidden="true">&times;</span>
+						</button>
+					  </div>
+					  
+					  
+					</div>
+				  </div>
+				</div>
+ 
+ 
+ 
+ <!-- Pop Altera -->
+		<div class="modal fade" id="alterareserva" tabindex="-1" role="dialog" aria-labelledby="cancelareserva" aria-hidden="true">
+				  <div class="modal-dialog" role="document">
+					<div class="modal-content">
+					  <div class="modal-header">
+						<h5 class="modal-title" id="cancelareserva">Você está alterando a sua reserva</h5>
+						<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+						  <span aria-hidden="true">&times;</span>
+						</button>
+					  </div>
+					  <div class="modal-body">
+						
+						 <div class="bootstrap-iso my-4">
+						 <div class="container-fluid">
+						  <div class="row">
+						   <div class=" col-12">
+							<form method="post">
+							 <div class="form-group col-12 col-lg-4 col-sm-12" style="float:left">
+							  <label class="control-label requiredField" style="color:#555" for="dateentrada">
+							   Check-In
+							   <span class="asteriskField">
+								*
+							   </span>
+							  </label>
+							  <div class="input-group">
+							   <div class="input-group-addon">
+								<i class="fa fa-calendar">
+								</i>
+							   </div>
+							   <input class="form-control" id="dataentrada" name="dateentrada" type="date"/>
+							  </div>
+							 </div>
+							 <div class="form-group col-12 col-lg-4 col-sm-12 " style="float:left">
+							  <label class="control-label requiredField" style="color:#555" for="datesaida">
+							   Check-Out
+							   <span class="asteriskField">
+								*
+							   </span>
+							  </label>
+							  <div class="input-group">
+							   <div class="input-group-addon">
+								<i class="fa fa-calendar">
+								</i>
+							   </div>
+							   <input class="form-control" id="datasaida" name="datesaida" type="date"/>
+							  </div>
+							 </div>
+							 <div class="form-group col-12 col-lg-4 col-sm-12" style="float:left">
+							  <label class="control-label requiredField" style="color:#555" for="hospedes">
+							   Quandidade de Hospedes
+							   <span class="asteriskField">
+								*
+							   </span>
+							  </label>
+							  <div class="input-group">
+							   <div class="input-group-addon">
+								<i class="fa fa-user">
+								</i>
+							   </div>
+							   <input class="form-control" id="hospedes" name="hospedes" type="tel"/>
+							  </div>
+							 </div>
+							<h5><b> Confirma a alteração?</b></h5>
+												  <button href="#" type="submit" data-dismiss="modal" class="btn btn-primary">Sim</button>
+												  
+												  <button onclick="location.href='#confirmaalteracao'" data-toggle="modal" data-dismiss="modal" data-target="#confirmaalteracao" type="submit" class="btn btn-secondary">Não</button>
+
+							</form>
+						   </div>
+						  </div>
+						 </div>
+						</div>
+						  					
+					  </div>
+					  
+					</div>
+				  </div>
+				</div>
+
+
+					<!-- Pop Alterado -->
+		<div class="modal fade" id="confirmaalteracao" tabindex="-1" role="dialog" aria-labelledby="confirmaalteracao" aria-hidden="true">
+		
+
+				  <div class="modal-dialog" role="document">
+					<div class="modal-content">
+					  <div class="modal-header">
+						<h5 class="modal-title" id="confirmaalteracao">Alteração de reserva realizada.</h5>
 						<button type="button" class="close" data-dismiss="modal" aria-label="Close">
 						  <span aria-hidden="true">&times;</span>
 						</button>
