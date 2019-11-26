@@ -95,6 +95,7 @@ echo'</b> <p>';
     <div class="col-md-8">
       <div class="card-body">
         <h5 class="card-title">Confira os detalhes do Quarto Luxo</h5>
+		<b><p>Check-In:10/02/2020<br>Check-Out: 15/02/2020<br>3 hospedes</p></b>
          <p class="card-text"><small class="text-muted">2 Pessoas - Wifi - TV 32" - Frigobar - Cama Casal King - Calefação - Ar condicionado - Hidro</small></p>
 		<button onclick="location.href='#cancelareserva'" data-toggle="modal" data-target="#cancelareserva" type="submit" class="btn btn-secondary">Cancelar Reserva</button>
 		<button onclick="location.href='#alterareserva'" data-toggle="modal" data-target="#alterareserva" type="submit" class="btn btn-primary">Alterar Reserva</button>
@@ -155,19 +156,21 @@ echo'</b> <p>';
 				  <div class="modal-dialog" role="document">
 					<div class="modal-content">
 					  <div class="modal-header">
-						<h5 class="modal-title" id="alterareserva">Você está alterando a sua reserva no Quarto Luxo</h5>
-						<b><p>Check-In:10/02/2020<br>Check-Out: 15/02/2020<br>3 hospedes</p></b>
-						<p>POde haver cobrança de valor pela alteração na reserva</p>
+						
 						<button type="button" class="close" data-dismiss="modal" aria-label="Close"> <span aria-hidden="true">&times;</span></button>
+						
 					  </div>
 					  
 					  <div class="modal-body">
+					  <h5 class="modal-title" id="alterareserva">Você está alterando a sua reserva no Quarto Luxo</h5>
+						<b><p>Check-In:10/02/2020<br>Check-Out: 15/02/2020<br>3 hospedes</p></b>
+						<p>Pode haver cobrança de valor pela alteração na reserva</p>
 						<div class="bootstrap-iso my-4">
 						 <div class="container-fluid">
 						  <div class="row">
 						   <div class=" col-12">
 							<form method="post">
-							 <div class="form-group col-12 col-lg-4 col-sm-12" >
+							 <div class="form-group col-12" >
 							  <label class="control-label requiredField" style="color:#555" for="dateentrada">
 							   Check-In
 							   <span class="asteriskField">
@@ -182,7 +185,7 @@ echo'</b> <p>';
 							   <input class="form-control" id="dataentrada" name="dateentrada" type="date"/>
 							  </div>
 							 </div>
-							 <div class="form-group col-12 col-lg-4 col-sm-12 ">
+							 <div class="form-group col-12">
 							  <label class="control-label requiredField" style="color:#555" for="datesaida">
 							   Check-Out
 							   <span class="asteriskField">
@@ -197,7 +200,7 @@ echo'</b> <p>';
 							   <input class="form-control" id="datasaida" name="datesaida" type="date"/>
 							  </div>
 							 </div>
-							 <div class="form-group col-12 col-lg-4 col-sm-12">
+							 <div class="form-group col-12">
 							  <label class="control-label requiredField" style="color:#555" for="hospedes">
 							   Quandidade de Hospedes
 							   <span class="asteriskField">
@@ -214,7 +217,7 @@ echo'</b> <p>';
 							 </div>
 							<h5><b> Confirma a alteração?</b></h5>
 							<button onclick="location.href='#confirmaalteracao'" data-toggle="modal" data-dismiss="modal" data-target="#confirmaalteracao" type="submit" class="btn btn-primary">Sim</button>
-							<button href="#" type="submit" data-dismiss="modal" class="btn btn-secondary">Não<button>
+							<button href="#" type="submit" data-dismiss="modal" class="btn btn-secondary">Não</button>
 							</form>
 						   </div>
 						  </div>
