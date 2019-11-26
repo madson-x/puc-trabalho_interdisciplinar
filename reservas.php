@@ -55,8 +55,8 @@
 <?php
 echo'
 <p> Veja detalhes da sua reserva no <b>Quarto '; echo "$tipoquarto"; 
-echo '</b><br><br> Data de checkin: <b>'; echo"$datacheckin"; 
-echo'</b><br> Data de checkout: <b>'; echo"$datacheckout"; 
+echo '</b><br><br> Data de check-in: <b>'; echo"$datacheckin"; 
+echo'</b><br> Data de check-out: <b>'; echo"$datacheckout"; 
 echo'</b><br> Valor da reserva: <b>R$'; echo"$valorreserva"; 
 
 
@@ -150,7 +150,7 @@ echo'</b> <p>';
  
  
  
- <!-- Pop Altera -->
+		<!-- Pop Altera -->
 		<div class="modal fade" id="alterareserva" tabindex="-1" role="dialog" aria-labelledby="alterareserva" aria-hidden="true">
 				  <div class="modal-dialog" role="document">
 					<div class="modal-content">
@@ -164,9 +164,9 @@ echo'</b> <p>';
 					  
 						<?php
 						echo'
-						<p><b>Tipo quarto: '; echo "$tipoquarto"; 
-						echo '</b><br><br> Data de checkin: <b>'; echo"$datacheckin"; 
-						echo'</b><br> Data de checkout: <b>'; echo"$datacheckout"; 
+						<p><b>Tipo de quarto: '; echo "$tipoquarto"; 
+						echo '</b><br> Data de check-in: <b>'; echo"$datacheckin"; 
+						echo'</b><br> Data de check-out: <b>'; echo"$datacheckout"; 
 						echo'</b><br> Valor da reserva: <b>R$'; echo"$valorreserva"; 
 						echo'</b> <p>';
 						?>
@@ -223,8 +223,8 @@ echo'</b> <p>';
 							  </div>
 							 </div>
 							 
-							 <div class="form-group col-12 " style="float:left" >
-	 						 <label class="control-label requiredField" for="quarto">
+							 <div class="form-group col-12 " >
+	 						 <label class="control-label requiredField" style="color:#555"  for="quarto">
 							   Tipo de Quarto
 							   <span class="asteriskField">
 								*
@@ -257,7 +257,7 @@ echo'</b> <p>';
 				</div>
 
 
-					<!-- Pop Alterado -->
+				<!-- Pop Alterado -->
 				<div class="modal fade" id="confirmaalteracao" tabindex="-1" role="dialog" aria-labelledby="confirmaalteracao" aria-hidden="true">
 				  <div class="modal-dialog" role="document">
 					<div class="modal-content">
@@ -270,14 +270,7 @@ echo'</b> <p>';
 					</div>
 				  </div>
 				</div>
- 
-
-
-
-
-
-
-      </div>
+       </div>
     </div>
   </div>
 </div>
