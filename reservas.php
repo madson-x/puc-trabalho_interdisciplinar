@@ -95,8 +95,7 @@ echo'</b> <p>';
     <div class="col-md-8">
       <div class="card-body">
         <h5 class="card-title">Confira os detalhes do Quarto Luxo</h5>
-		<b><p>Check-In:10/02/2020<br>Check-Out: 15/02/2020<br>3 hospedes</p></b>
-         <p class="card-text"><small class="text-muted">2 Pessoas - Wifi - TV 32" - Frigobar - Cama Casal King - Calefação - Ar condicionado - Hidro</small></p>
+		<p class="card-text"><small class="text-muted">2 Pessoas - Wifi - TV 32" - Frigobar - Cama Casal King - Calefação - Ar condicionado - Hidro</small></p>
 		<button onclick="location.href='#cancelareserva'" data-toggle="modal" data-target="#cancelareserva" type="submit" class="btn btn-secondary">Cancelar Reserva</button>
 		<button onclick="location.href='#alterareserva'" data-toggle="modal" data-target="#alterareserva" type="submit" class="btn btn-primary">Alterar Reserva</button>
 
@@ -163,7 +162,17 @@ echo'</b> <p>';
 					  
 					  <div class="modal-body">
 					  <h5 class="modal-title" id="alterareserva">Você está alterando a sua reserva no Quarto Luxo</h5>
-						<b><p>Check-In:10/02/2020<br>Check-Out: 15/02/2020<br>3 hospedes</p></b>
+						<?php
+						echo'
+						<p><b>Tipo quarto: '; echo "$tipoquarto"; 
+						echo '</b><br><br> Data de checkin: <b>'; echo"$datacheckin"; 
+						echo'</b><br> Data de checkout: <b>'; echo"$datacheckout"; 
+						echo'</b><br> Valor da reserva: <b>R$'; echo"$valorreserva"; 
+
+
+						echo'</b> <p>';
+
+						?>
 						<p>Pode haver cobrança de valor pela alteração na reserva</p>
 						<div class="bootstrap-iso my-4">
 						 <div class="container-fluid">
