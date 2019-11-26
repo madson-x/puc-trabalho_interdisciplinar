@@ -155,25 +155,23 @@ echo'</b> <p>';
 				  <div class="modal-dialog" role="document">
 					<div class="modal-content">
 					  <div class="modal-header">
-						
+						<h5 class="modal-title" id="alterareserva">Você está alterando a sua reserva</h5>
 						<button type="button" class="close" data-dismiss="modal" aria-label="Close"> <span aria-hidden="true">&times;</span></button>
 						
 					  </div>
 					  
 					  <div class="modal-body">
-					  <h5 class="modal-title" id="alterareserva">Você está alterando a sua reserva no Quarto Luxo</h5>
+					  
 						<?php
 						echo'
 						<p><b>Tipo quarto: '; echo "$tipoquarto"; 
 						echo '</b><br><br> Data de checkin: <b>'; echo"$datacheckin"; 
 						echo'</b><br> Data de checkout: <b>'; echo"$datacheckout"; 
 						echo'</b><br> Valor da reserva: <b>R$'; echo"$valorreserva"; 
-
-
 						echo'</b> <p>';
-
 						?>
-						<p>Pode haver cobrança de valor pela alteração na reserva</p>
+						
+						
 						<div class="bootstrap-iso my-4">
 						 <div class="container-fluid">
 						  <div class="row">
@@ -224,7 +222,28 @@ echo'</b> <p>';
 							   <input class="form-control" id="hospedes" name="hospedes" type="tel"/>
 							  </div>
 							 </div>
-							<h5><b> Confirma a alteração?</b></h5>
+							 
+							 <div class="form-group col-12 " style="float:left" >
+	 						 <label class="control-label requiredField" for="quarto">
+							   Tipo de Quarto
+							   <span class="asteriskField">
+								*
+							   </span>
+							  </label>
+							  <select class="select form-control" id="quarto" name="quarto">
+							   <option value="Gerente">
+								Quarto Luxo
+							   </option>
+							   <option value="Suporte">
+								Quarto Família
+							   </option>
+							   <option value="Atendimento">
+								Quarto Ecônomico
+							   </option>
+							  </select>
+							  </div>
+							<p class="card-text"><small class="text-muted">Pode haver cobrança de valor pela alteração na reserva</small></p>
+							<h5><b>Confirma a alteração?</b></h5>
 							<button onclick="location.href='#confirmaalteracao'" data-toggle="modal" data-dismiss="modal" data-target="#confirmaalteracao" type="submit" class="btn btn-primary">Sim</button>
 							<button href="#" type="submit" data-dismiss="modal" class="btn btn-secondary">Não</button>
 							</form>
