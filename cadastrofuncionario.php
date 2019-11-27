@@ -264,7 +264,15 @@
      </div>
      <div class="form-group">
       <div>
-       <button class="btn btn-custom btn-lg" style="float:right" name="submit" type="submit">
+	  <a href="http://localhost/hotelgerais/">
+       <button href="reservar-quarto.php" class="btn  btn-danger btn-lg" style="float:right; margin-right:15px" type="button"  type="submit">
+        Voltar
+       </button></a>
+      </div>
+     </div>
+     <div class="form-group">
+      <div>
+       <button class="btn btn-custom btn-lg" style="float:right; margin-right:25px" name="submit" type="submit">
         Cadastrar
        </button>
       </div>
