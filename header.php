@@ -101,7 +101,7 @@
            <a class="dropdown-item" onclick="modalLogin()">Login</a>
 		  
  		  <a class="dropdown-item" href="cadastro.php">Cadastrar</a>
-		  <a class="dropdown-item" href="cadastrofuncionario.php">Cadastrar Funcionário</a>
+		 
 		  
          </div>
 	  </li>
