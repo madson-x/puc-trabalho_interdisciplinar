@@ -17,7 +17,7 @@ function popularReservas(reservas) {
 }
 
 function htmlReserva(item) {
-    return cabecalhoReserva(item) + centroReserva(item);
+    return cabecalhoReserva(item) + centroReserva(item) + popupCancela(item) + popupAltera(item);
 }
 
 function cancelar(id) {
@@ -74,17 +74,10 @@ function centroReserva(item)
 							'<h5 class="card-title">Confira os detalhes do Quarto Luxo</h5>',
 								'<p class="card-text"><small class="text-muted">2 Pessoas - Wifi - TV 32" - Frigobar - Cama Casal King - Calefação - Ar condicionado - Hidro</small></p>',
                                 
-								'<button onclick="popupCancela('+ item.idreserva +')" type="button" class="btn btn-secondary">Cancelar Reserva</button>',
+								'<button onclick="popupCancela('+ item +')" type="button" class="btn btn-secondary">Cancelar Reserva</button>',
                                 '&nbsp;',
-                                '<button onclick="popAlterar(' + item.idreserva +')" type="button" class="btn btn-primary">Alterar Reserva</button>',
-								
-								
-								
-							
-
-							
-								
-				        '</div>',
+                                '<button onclick="popAlterar(' + item +')" type="button" class="btn btn-primary">Alterar Reserva</button>',
+						'</div>',
 				    '</div>',        
 				'</div>',
 			'</div>',
@@ -95,7 +88,7 @@ function centroReserva(item)
 function popupCancela(item)
 {
     return [
-								'<div class="modal fade" id="cancelareserva" tabindex="-1" role="dialog" aria-labelledby="cancelareserva" aria-hidden="true">',
+								'<div class="modal fade"  tabindex="-1" role="dialog" aria-hidden="true">',
 									 '<div class="modal-dialog" role="document">',
 										'<div class="modal-content">',
 										 '<div class="modal-header">',
@@ -123,8 +116,8 @@ function popupCancela(item)
 function popupAltera(item)
 {
     return [
-											'<h5><b> Tem certeza que deseja cancelar?</b></h5>',
-											  '<button href="#" type="submit" data-dismiss="modal" class="btn btn-primary">Não</button>',
+											 '<h5><b> Tem certeza que deseja cancelar?</b></h5>',
+											 '<button href="#" type="submit" data-dismiss="modal" class="btn btn-primary">Não</button>',
 											 '<button onclick="alterar('+ item.idreserva +')" type="button" class="btn btn-secondary">Sim</button>',
 								
     ].join('');
