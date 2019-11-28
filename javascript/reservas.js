@@ -87,8 +87,8 @@ function centroReserva(item)
 
 function popupCancela(item)
 {
-    return [
-									'<div class="modal fade"  tabindex="-1" role="dialog" aria-hidden="true">',
+    
+								alert('<div class="modal fade"  tabindex="-1" role="dialog" aria-hidden="true">',
 									 '<div class="modal-dialog" role="document">',
 										'<div class="modal-content">',
 										 '<div class="modal-header">',
@@ -109,8 +109,8 @@ function popupCancela(item)
 										  '</div>',
 										'</div>',
 									  '</div>',
-									'</div>'
-    ].join('');
+									'</div>');
+   
 }
 
 function popupAltera(item)
