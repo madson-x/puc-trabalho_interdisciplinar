@@ -76,7 +76,7 @@ function centroReserva(item)
                                 
 								'<button onclick="popupCancela('+ item +')" type="button" class="btn btn-secondary">Cancelar Reserva</button>',
                                 '&nbsp;',
-                                '<button onclick="popAlterar(' + item +')" type="button" class="btn btn-primary">Alterar Reserva</button>',
+                                '<button onclick="popupAltera(' + item +')" type="button" class="btn btn-primary">Alterar Reserva</button>',
 						'</div>',
 				    '</div>',        
 				'</div>',
