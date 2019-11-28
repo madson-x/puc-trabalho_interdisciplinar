@@ -44,7 +44,7 @@ function cancelar(id) {
 	
     confirm('Tem certeza que deseja cancelar?');
 
-
+}
 function alterar(id) {
     alert('alterar');
 }
