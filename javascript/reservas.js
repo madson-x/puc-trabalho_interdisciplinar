@@ -17,7 +17,7 @@ function popularReservas(reservas) {
 }
 
 function htmlReserva(item) {
-    return cabecalhoReserva(item) + centroReserva(item) + popupCancela(id) + popupAltera(id);
+    return cabecalhoReserva(item) + centroReserva(item);
 }
 
 function cancelar(id) {
