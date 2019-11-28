@@ -123,7 +123,7 @@ function popupAltera(item)
 										 '<div class="modal-header">',
 											 '<h5><b> Tem certeza que deseja alterar?</b></h5>',
 											 '<button type="submit" data-dismiss="modal" class="btn btn-primary">Não</button>',
-											 '<button onclick="alterar('+ item.idreserva +')" type="button" class="btn btn-secondary">Sim</button>'
+											 '<button onclick="alterar('+ item.idreserva +')" type="button" class="btn btn-secondary">Sim</button>',
 											  '</div>',
 										'</div>',
 									  '</div>',
