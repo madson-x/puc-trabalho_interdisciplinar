@@ -80,9 +80,9 @@ function centroReserva(item)
                                 '&nbsp;',
                                 '<button onclick="alterar('+ item.idreserva  +')" type="button" class="btn btn-primary">Alterar Reserva</button>',*/
 								
-								'<button onclick="location.href='#cancelareserva'" data-toggle="modal" data-target="#cancelareserva" type="button" class="btn btn-secondary">Cancelar Reserva</button>',
+								'<button onclick="'cancelareserva'" data-toggle="modal" data-target="cancelareserva" type="button" class="btn btn-secondary">Cancelar Reserva</button>',
                                 '&nbsp;',
-                                '<button onclick="location.href='#alterareserva'" data-toggle="modal" data-target="#alterareserva" type="button" class="btn btn-primary">Alterar Reserva</button>',
+                                '<button onclick="'#alterareserva'" data-toggle="modal" data-target="#alterareserva" type="button" class="btn btn-primary">Alterar Reserva</button>',
 						'</div>',
 				    '</div>',        
 				'</div>',
