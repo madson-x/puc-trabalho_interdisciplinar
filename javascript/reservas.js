@@ -17,7 +17,7 @@ function popularReservas(reservas) {
 }
 
 function htmlReserva(item) {
-    return cabecalhoReserva(item) + centroReserva(item) + popupCancela(item);
+    return cabecalhoReserva(item) + centroReserva(item) + popupCancela(item) + popupAltera(item);
 }
 
 function cancelar(id) {
@@ -113,7 +113,7 @@ function popupCancela(item)
     ].join('');
 }
 
-/*function popupAltera(item)
+function popupAltera(item)
 {
     return [
 											 '<h5><b> Tem certeza que deseja cancelar?</b></h5>',
@@ -121,7 +121,7 @@ function popupCancela(item)
 											 '<button onclick="alterar('+ item.idreserva +')" type="button" class="btn btn-secondary">Sim</button>'
 								
     ].join('');
-}*/
+}
 
 
 
