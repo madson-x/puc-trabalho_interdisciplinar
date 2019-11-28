@@ -21,7 +21,31 @@ function htmlReserva(item) {
 }
 
 function cancelar(id) {
-    confirm('De acordo com o contrato de prestação de serviço todo cancelamento com menos de 10 dias de antecedência estará sujeito a cobrança de 50% do valor da reserva.<br>Caso o cancelamento seja realizado com menos de 24h horas a reserva será cobrada em sua totalidade.<br>Pagamento realizados por cartão de crédito será estornado em sua fatura, pagamentos em dinheiro será transferido para conta de sua preferência em até 10 dias úteis.');
+	
+							'<div class="modal fade" tabindex="-1" role="dialog" aria-hidden="true">',
+									 '<div class="modal-dialog" role="document">',
+										'<div class="modal-content">',
+										 '<div class="modal-header">',
+											'<h5 class="modal-title" >Você está cancelando a sua reserva</h5>',
+											'<button type="button" class="close" data-dismiss="modal" aria-label="Close">',
+											  '<span aria-hidden="true">&times;</span>',
+											'</button>',
+										  '</div>',
+										  '<div class="modal-body">',
+											'<div >',
+											'  <p>De acordo com o contrato de prestação de serviço todo cancelamento com menos de 10 dias de antecedência estará sujeito a cobrança de 50% do valor da reserva. <br>Caso o cancelamento seja realizado com menos de 24h horas a reserva será cobrada em sua totalidade. </p>',
+											 ' <p>Pagamento realizados por cartão de crédito será estornado em sua fatura, pagamentos em dinheiro será transferido para conta de sua preferência em até 10 dias úteis.</p>',
+											  '</div>',
+											  '<h5><b> Tem certeza que deseja cancelar?</b></h5>',
+											  '<button href="#" type="submit" data-dismiss="modal" class="btn btn-primary">Não</button>',
+											  '&nbsp;',
+											 '<button onclick="cancelar('+ item.idreserva +')" type="button" class="btn btn-secondary">Sim</button>',
+										  '</div>',
+										'</div>',
+									  '</div>',
+									'</div>'
+	
+    /*confirm('De acordo com o contrato de prestação de serviço todo cancelamento com menos de 10 dias de antecedência estará sujeito a cobrança de 50% do valor da reserva.<br>Caso o cancelamento seja realizado com menos de 24h horas a reserva será cobrada em sua totalidade.<br>Pagamento realizados por cartão de crédito será estornado em sua fatura, pagamentos em dinheiro será transferido para conta de sua preferência em até 10 dias úteis.');*/
 }
 
 function alterar(id) {
@@ -74,7 +98,7 @@ function centroReserva(item)
 							'<h5 class="card-title">Confira os detalhes do Quarto Luxo</h5>',
 								'<p class="card-text"><small class="text-muted">2 Pessoas - Wifi - TV 32" - Frigobar - Cama Casal King - Calefação - Ar condicionado - Hidro</small></p>',
                                 
-								'<button onclick="popupCancela('+ item.idreserva +')" type="button" class="btn btn-secondary">Cancelar Reserva</button>',
+								'<button onclick="cancelar('+ item.idreserva +')" type="button" class="btn btn-secondary">Cancelar Reserva</button>',
                                 '&nbsp;',
                                 '<button onclick="alterar('+ item.idreserva  +')" type="button" class="btn btn-primary">Alterar Reserva</button>',
 						'</div>',
@@ -85,7 +109,7 @@ function centroReserva(item)
     ].join('');
 }
 
-function popupCancela(item)
+/*function popupCancela(item)
 {
     return [
 									'<div class="modal fade" tabindex="-1" role="dialog" aria-hidden="true">',
@@ -111,7 +135,7 @@ function popupCancela(item)
 									  '</div>',
 									'</div>'
     ].join('');
-}
+}*/
 
 /*function popupAltera(id)
 {
