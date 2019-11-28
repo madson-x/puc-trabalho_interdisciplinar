@@ -113,7 +113,7 @@ function popupCancela(id)
     ].join('');
 }
 
-function popupAltera(item)
+function popupAltera(id)
 {
     return [
 	
