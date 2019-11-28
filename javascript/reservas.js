@@ -37,16 +37,13 @@ function cancelar(id) {
 											 ' <p>Pagamento realizados por cartão de crédito será estornado em sua fatura, pagamentos em dinheiro será transferido para conta de sua preferência em até 10 dias úteis.</p>',
 											  '</div>',
 											  '<h5><b> Tem certeza que deseja cancelar?</b></h5>',
-											  '<button href="#" type="submit" data-dismiss="modal" class="btn btn-primary">Não</button>',
-											  '&nbsp;',
-											 '<button onclick="cancelar('+ item.idreserva +')" type="button" class="btn btn-secondary">Sim</button>',
-										  '</div>',
+																					  '</div>',
 										'</div>',
 									  '</div>',
 									'</div>'
 	
-    /*confirm('De acordo com o contrato de prestação de serviço todo cancelamento com menos de 10 dias de antecedência estará sujeito a cobrança de 50% do valor da reserva.<br>Caso o cancelamento seja realizado com menos de 24h horas a reserva será cobrada em sua totalidade.<br>Pagamento realizados por cartão de crédito será estornado em sua fatura, pagamentos em dinheiro será transferido para conta de sua preferência em até 10 dias úteis.');*/
-}
+    confirm('Tem certeza que deseja cancelar?');
+
 
 function alterar(id) {
     alert('alterar');
