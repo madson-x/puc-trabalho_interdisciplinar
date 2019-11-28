@@ -74,9 +74,9 @@ function centroReserva(item)
 							'<h5 class="card-title">Confira os detalhes do Quarto Luxo</h5>',
 								'<p class="card-text"><small class="text-muted">2 Pessoas - Wifi - TV 32" - Frigobar - Cama Casal King - Calefação - Ar condicionado - Hidro</small></p>',
                                 
-								'<button onclick="popupCancela()" type="button" class="btn btn-secondary">Cancelar Reserva</button>',
+								'<button onclick="popupCancela('+ item +')" type="button" class="btn btn-secondary">Cancelar Reserva</button>',
                                 '&nbsp;',
-                                '<button onclick="popupAltera()" type="button" class="btn btn-primary">Alterar Reserva</button>',
+                                '<button onclick="popupAltera('+ item +')" type="button" class="btn btn-primary">Alterar Reserva</button>',
 						'</div>',
 				    '</div>',        
 				'</div>',
@@ -88,11 +88,11 @@ function centroReserva(item)
 function popupCancela(item)
 {
     return [
-									'<div class="modal fade"  tabindex="-1" role="dialog" aria-hidden="true">',
+									'<div class="modal fade" tabindex="-1" role="dialog" aria-hidden="true">',
 									 '<div class="modal-dialog" role="document">',
 										'<div class="modal-content">',
 										 '<div class="modal-header">',
-											'<h5 class="modal-title" id="cancelareserva">Você está cancelando a sua reserva</h5>',
+											'<h5 class="modal-title" >Você está cancelando a sua reserva</h5>',
 											'<button type="button" class="close" data-dismiss="modal" aria-label="Close">',
 											  '<span aria-hidden="true">&times;</span>',
 											'</button>',
@@ -116,9 +116,18 @@ function popupCancela(item)
 function popupAltera(item)
 {
     return [
-											 '<h5><b> Tem certeza que deseja cancelar?</b></h5>',
-											 '<button href="#" type="submit" data-dismiss="modal" class="btn btn-primary">Não</button>',
+	
+									'<div class="modal fade"  tabindex="-1" role="dialog" aria-hidden="true">',
+									 '<div class="modal-dialog" role="document">',
+										'<div class="modal-content">',
+										 '<div class="modal-header">',
+											 '<h5><b> Tem certeza que deseja alterar?</b></h5>',
+											 '<button type="submit" data-dismiss="modal" class="btn btn-primary">Não</button>',
 											 '<button onclick="alterar('+ item.idreserva +')" type="button" class="btn btn-secondary">Sim</button>'
+											  '</div>',
+										'</div>',
+									  '</div>',
+									'</div>'
 								
     ].join('');
 }
