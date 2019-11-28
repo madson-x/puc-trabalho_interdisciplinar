@@ -23,11 +23,11 @@ function htmlReserva(item) {
 function cancelar(id) {
 	
 	
-    confirm('Tem certeza que deseja cancelar?');
+    alert('Solicitação de cancelamento registrada.');
 
 }
 function alterar(id) {
-    alert('alterar');
+    alert('Alteração da reserva realizada com sucesso.');
 }
 
 function cabecalhoReserva(item) {
@@ -107,9 +107,116 @@ function centroReserva(item)
 								
 								
 								
-                                '&nbsp;',
-                                /*'<button onclick="'#alterareserva'" data-toggle="modal" data-target="#alterareserva" type="button" class="btn btn-primary">Alterar Reserva</button>',
-						*/'</div>',
+                                
+                                '<button data-toggle="modal" data-target="#alterareserva" type="button" class="btn btn-primary">Alterar Reserva</button>',
+								
+								
+								/* Pop Altera */
+				'<div class="modal fade" id="alterareserva" tabindex="-1" role="dialog" aria-labelledby="alterareserva" aria-hidden="true">',
+				  '<div class="modal-dialog" role="document">',
+					'<div class="modal-content">',
+					  '<div class="modal-header">',
+						'<h5 class="modal-title" id="alterareserva">Você está alterando a sua reserva</h5>',
+						'<button type="button" class="close" data-dismiss="modal" aria-label="Close"> <span aria-hidden="true">&times;</span></button>',
+						
+					  '</div>',
+					  
+					  '<div class="modal-body">',
+					  
+						'<p> Veja detalhes da sua reserva no <b>Quarto ' + item.acomodacao_descricao,
+						'</b><br><br> Data de checkin: <b>' + item.data_entrada,
+						'</b><br> Data de checkout: <b>' + item.data_saida,
+						'</b><br> Valor da reserva: <b>R$' + item.valor_hospedagem,
+						'</b><p></div>'
+						
+						
+						'<div class="bootstrap-iso my-4">',
+						 '<div class="container-fluid">',
+						  '<div class="row">',
+						   '<div class=" col-12">',
+							'<form method="post">',
+							 '<div class="form-group col-12" >',
+							  '<label class="control-label requiredField" style="color:#555" for="dateentrada">',
+							   'Check-In',
+							   '<span class="asteriskField">',
+								'*',
+							   '</span>',
+							  '</label>',
+							  '<div class="input-group">',
+							   '<div class="input-group-addon">',
+								'<i class="fa fa-calendar"></i>',
+							   '</div>',
+							   '<input class="form-control" id="dataentrada" name="dateentrada" type="date"/>',
+							  '</div>',
+							 '</div>',
+							 '<div class="form-group col-12">',
+							  '<label class="control-label requiredField" style="color:#555" for="datesaida">',
+							   'Check-Out',
+							   '<span class="asteriskField">',
+								'*',
+							   '</span>',
+							  '</label>',
+							  '<div class="input-group">',
+							   '<div class="input-group-addon">',
+								'<i class="fa fa-calendar"></i>',
+							   '</div>',
+							   '<input class="form-control" id="datasaida" name="datesaida" type="date"/>',
+							  '</div>',
+							 '</div>',
+							 '<div class="form-group col-12">',
+							  '<label class="control-label requiredField" style="color:#555" for="hospedes">',
+							   'Quandidade de Hospedes',
+							   '<span class="asteriskField">',
+								'*',
+							   '</span>',
+							  '</label>',
+							  '<div class="input-group">',
+							   '<div class="input-group-addon">',
+								'<i class="fa fa-user"></i>',
+							   '</div>',
+							   '<input class="form-control" id="hospedes" name="hospedes" type="tel"/>',
+							  '</div>',
+							 '</div>',
+							 
+							 '<div class="form-group col-12 " >',
+	 						'<label class="control-label requiredField" style="color:#555"  for="quarto">',
+							   'Tipo de Quarto',
+							   '<span class="asteriskField">',
+								'*',
+							   '</span>',
+							  '</label>',
+							  '<select class="select form-control" id="quarto" name="quarto">',
+							   '<option value="Qluxo">',
+								'Quarto Luxo',
+							   '</option>',
+							   '<option value="Qfamilia">',
+								'Quarto Família',
+							   '</option>',
+							   '<option value="Qeconomico">',
+								'Quarto Ecônomico',
+							   '</option>',
+							  '</select>',
+							  '</div>',
+							'<p class="card-text"><small class="text-muted">Pode haver cobrança de valor pela alteração na reserva</small></p>',
+							'<h5><b>Confirma a alteração?</b></h5>',
+							'<button onclick="cancelar('+ item.idreserva +')'" type="submit" class="btn btn-primary">Sim</button>',
+							'<button href="#" type="submit" data-dismiss="modal" class="btn btn-secondary">Não</button>',
+							'</form>',
+						   '</div>',
+						  '</div>',
+						 '</div>',
+						'</div>',
+					  '</div>',
+					'</div>',
+				 '</div>',
+				'</div>',
+
+
+				
+		
+								
+								
+						'</div>',
 				    '</div>',        
 				'</div>',
 			'</div>',
@@ -117,55 +224,4 @@ function centroReserva(item)
     ].join('');
 }
 
-$("#cancelareserva").modal();
-
-
-/*function popupCancela(item)
-{
-    return [
-									'<div class="modal fade" tabindex="-1" role="dialog" aria-hidden="true">',
-									 '<div class="modal-dialog" role="document">',
-										'<div class="modal-content">',
-										 '<div class="modal-header">',
-											'<h5 class="modal-title" >Você está cancelando a sua reserva</h5>',
-											'<button type="button" class="close" data-dismiss="modal" aria-label="Close">',
-											  '<span aria-hidden="true">&times;</span>',
-											'</button>',
-										  '</div>',
-										  '<div class="modal-body">',
-											'<div >',
-											'  <p>De acordo com o contrato de prestação de serviço todo cancelamento com menos de 10 dias de antecedência estará sujeito a cobrança de 50% do valor da reserva. <br>Caso o cancelamento seja realizado com menos de 24h horas a reserva será cobrada em sua totalidade. </p>',
-											 ' <p>Pagamento realizados por cartão de crédito será estornado em sua fatura, pagamentos em dinheiro será transferido para conta de sua preferência em até 10 dias úteis.</p>',
-											  '</div>',
-											  '<h5><b> Tem certeza que deseja cancelar?</b></h5>',
-											  '<button href="#" type="submit" data-dismiss="modal" class="btn btn-primary">Não</button>',
-											  '&nbsp;',
-											 '<button onclick="cancelar('+ item.idreserva +')" type="button" class="btn btn-secondary">Sim</button>',
-										  '</div>',
-										'</div>',
-									  '</div>',
-									'</div>'
-    ].join('');
-}*/
-
-/*function popupAltera(id)
-{
-    return [
-	
-									'<div class="modal fade"  tabindex="-1" role="dialog" aria-hidden="true">',
-									 '<div class="modal-dialog" role="document">',
-										'<div class="modal-content">',
-										 '<div class="modal-header">',
-											 '<h5><b> Tem certeza que deseja alterar?</b></h5>',
-											 '<button type="submit" data-dismiss="modal" class="btn btn-primary">Não</button>',
-											 '<button onclick="alterar('+ item.idreserva +')" type="button" class="btn btn-secondary">Sim</button>',
-											  '</div>',
-										'</div>',
-									  '</div>',
-									'</div>'
-								
-    ].join('');
-}*/
-
-
-
+/*$("#cancelareserva").modal();*/
