@@ -51,7 +51,7 @@
 
 		<hr>
 		<div class="row" id="reservas">
-		
+		</div>
 		
 		<!-- Pop Cancela -->
 		<div class="modal fade" id="cancelareserva" tabindex="-1" role="dialog" aria-labelledby="cancelareserva" aria-hidden="true">
@@ -228,7 +228,7 @@
 		
 		
 		
-		</div>
+		
 		<hr>
 	</div>
 
