@@ -74,7 +74,7 @@ function centroReserva(item)
 							'<h5 class="card-title">Confira os detalhes do Quarto Luxo</h5>',
 								'<p class="card-text"><small class="text-muted">2 Pessoas - Wifi - TV 32" - Frigobar - Cama Casal King - Calefação - Ar condicionado - Hidro</small></p>',
                                 
-								'<button onclick="cancelar('+ item.idreserva +')" type="button" class="btn btn-secondary">Cancelar Reserva</button>',
+								'<button onclick="popupCancela('+ item.idreserva +')" type="button" class="btn btn-secondary">Cancelar Reserva</button>',
                                 '&nbsp;',
                                 '<button onclick="alterar('+ item.idreserva  +')" type="button" class="btn btn-primary">Alterar Reserva</button>',
 						'</div>',
@@ -85,7 +85,7 @@ function centroReserva(item)
     ].join('');
 }
 
-function popupCancela(id)
+function popupCancela(item)
 {
     return [
 									'<div class="modal fade" tabindex="-1" role="dialog" aria-hidden="true">',
