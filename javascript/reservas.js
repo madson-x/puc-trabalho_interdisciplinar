@@ -199,7 +199,7 @@ function centroReserva(item)
 							  '</div>',
 							'<p class="card-text"><small class="text-muted">Pode haver cobrança de valor pela alteração na reserva</small></p>',
 							'<h5><b>Confirma a alteração?</b></h5>',
-							'<button onclick="cancelar('+ item.idreserva +')'" type="submit" class="btn btn-primary">Sim</button>',
+							'<button onclick="alterar('+ item.idreserva +')'" type="submit" class="btn btn-primary">Sim</button>',
 							'<button href="#" type="submit" data-dismiss="modal" class="btn btn-secondary">Não</button>',
 							'</form>',
 						   '</div>',
