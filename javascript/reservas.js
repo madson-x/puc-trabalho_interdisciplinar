@@ -104,7 +104,7 @@ function centroReserva(item)
 											  '<h5><b> Tem certeza que deseja cancelar?</b></h5>',
 											  '<button href="#" type="submit" data-dismiss="modal" class="btn btn-primary">Não</button>',
 											  '&nbsp;',
-											 '<button onclick="cancelar('+ item.idreserva +')" type="button" class="btn btn-secondary">Sim</button>',
+											 '<button onclick="cancelar('+ item.idreserva +')"  type="button" class="btn btn-secondary close">Sim</button>',
 										  '</div>',
 										'</div>',
 									  '</div>',
@@ -204,7 +204,7 @@ function centroReserva(item)
 							  '</div>',
 							'<p class="card-text"><small class="text-muted">Pode haver cobrança de valor pela alteração na reserva</small></p>',
 							'<h5><b>Confirma a alteração?</b></h5>',
-							'<button onclick="alterar('+ item.idreserva +')" type="button" class="btn btn-primary">Sim</button>',
+							'<button onclick="alterar('+ item.idreserva +')" type="button" class="btn btn-primary close">Sim</button>',
 							'&nbsp;',							
 							'<button href="#" type="submit" data-dismiss="modal" class="btn btn-secondary">Não</button>',
 							'</form>',
@@ -230,4 +230,3 @@ function centroReserva(item)
     ].join('');
 }
 
-/*$("#cancelareserva").modal();*/
