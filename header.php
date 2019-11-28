@@ -44,11 +44,11 @@
  <!-- Logo e menu -->
 					<div class="my-2 logo"	 style="text-align:center; " >
 					
-						<img src="img/logo.png" class="img img-fluid" data-toggle="tooltip" data-placement="top" title="Logo" id="itemlogo"   >
+						<a href="index.php"><img src="img/logo.png" class="img img-fluid" data-toggle="tooltip" data-placement="top" title="Logo" id="itemlogo" ></a>
 				
 					</div>
 					
-  <div class="menu  		">
+  <div class="menu">
   <ul class="nav justify-content-center" >
   <li class="nav-item" id="itemmenu">
     <a class="nav-link active" id="linkmenu"  href="index.php">Início</a>
