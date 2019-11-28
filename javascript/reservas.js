@@ -17,30 +17,11 @@ function popularReservas(reservas) {
 }
 
 function htmlReserva(item) {
-    return cabecalhoReserva(item) + centroReserva(item) + cancelar(item.idreserva);
+    return cabecalhoReserva(item) + centroReserva(item);
 }
 
 function cancelar(id) {
 	
-						return [	'<div class="modal fade" tabindex="-1" role="dialog" aria-hidden="true">',
-									 '<div class="modal-dialog" role="document">',
-										'<div class="modal-content">',
-										 '<div class="modal-header">',
-											'<h5 class="modal-title" >Você está cancelando a sua reserva</h5>',
-											'<button type="button" class="close" data-dismiss="modal" aria-label="Close">',
-											  '<span aria-hidden="true">&times;</span>',
-											'</button>',
-										  '</div>',
-										  '<div class="modal-body">',
-											'<div >',
-											'  <p>De acordo com o contrato de prestação de serviço todo cancelamento com menos de 10 dias de antecedência estará sujeito a cobrança de 50% do valor da reserva. <br>Caso o cancelamento seja realizado com menos de 24h horas a reserva será cobrada em sua totalidade. </p>',
-											 ' <p>Pagamento realizados por cartão de crédito será estornado em sua fatura, pagamentos em dinheiro será transferido para conta de sua preferência em até 10 dias úteis.</p>',
-											  '</div>',
-											  '<h5><b> Tem certeza que deseja cancelar?</b></h5>',
-																					  '</div>',
-										'</div>',
-									  '</div>',
-									'</div>' ].join('');
 	
     confirm('Tem certeza que deseja cancelar?');
 
