@@ -127,7 +127,7 @@ function centroReserva(item)
 						'</b><br><br> Data de checkin: <b>' + item.data_entrada,
 						'</b><br> Data de checkout: <b>' + item.data_saida,
 						'</b><br> Valor da reserva: <b>R$' + item.valor_hospedagem,
-						'</b><p></div>'
+						'</b><p></div>',
 						
 						
 						'<div class="bootstrap-iso my-4">',
