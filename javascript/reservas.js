@@ -32,12 +32,12 @@ function alterar(id) {
 
 function cabecalhoReserva(item) {
     return [
-        /*'<div class="col-lg-4 col-12 my-3" style="float:left">',
+        '<div class="col-lg-4 col-12 my-3" style="float:left">',
         '<p> Veja detalhes da sua reserva no <b>Quarto ' + item.acomodacao_descricao,
         '</b><br><br> Data de checkin: <b>' + item.data_entrada,
         '</b><br> Data de checkout: <b>' + item.data_saida,
         '</b><br> Valor da reserva: <b>R$' + item.valor_hospedagem,
-        '</b><p></div>'*/
+        '</b><p></div>'
 		
     ].join('');
 }
@@ -46,12 +46,6 @@ function centroReserva(item)
 {
     return [
 	
-	'<div class="col-lg-4 col-12 my-3" style="float:left">',
-        '<p> Veja detalhes da sua reserva no <b>Quarto ' + item.acomodacao_descricao,
-        '</b><br><br> Data de checkin: <b>' + item.data_entrada,
-        '</b><br> Data de checkout: <b>' + item.data_saida,
-        '</b><br> Valor da reserva: <b>R$' + item.valor_hospedagem,
-        '</b><p></div>'
 	
         '<div class="col-lg-8 col-12 my-3" style="float:left">',
             '<div class="card mb-3" style="max-width: 100%;">',
