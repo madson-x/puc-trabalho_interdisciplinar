@@ -76,9 +76,13 @@ function centroReserva(item)
 							'<h5 class="card-title">Confira os detalhes do Quarto Luxo</h5>',
 								'<p class="card-text"><small class="text-muted">2 Pessoas - Wifi - TV 32" - Frigobar - Cama Casal King - Calefação - Ar condicionado - Hidro</small></p>',
                                 
-								'<button onclick="cancelar('+ item.idreserva +')" type="button" class="btn btn-secondary">Cancelar Reserva</button>',
+								/*'<button onclick="cancelar('+ item.idreserva +')" type="button" class="btn btn-secondary">Cancelar Reserva</button>',
                                 '&nbsp;',
-                                '<button onclick="alterar('+ item.idreserva  +')" type="button" class="btn btn-primary">Alterar Reserva</button>',
+                                '<button onclick="alterar('+ item.idreserva  +')" type="button" class="btn btn-primary">Alterar Reserva</button>',*/
+								
+								'<button onclick="location.href='#cancelareserva'" data-toggle="modal" data-target="#cancelareserva" type="button" class="btn btn-secondary">Cancelar Reserva</button>',
+                                '&nbsp;',
+                                '<button onclick="location.href='#alterareserva'" data-toggle="modal" data-target="#alterareserva" type="button" class="btn btn-primary">Alterar Reserva</button>',
 						'</div>',
 				    '</div>',        
 				'</div>',
