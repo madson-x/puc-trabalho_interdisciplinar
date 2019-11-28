@@ -21,7 +21,9 @@ function htmlReserva(item) {
 }
 
 function cancelar(id) {
-    confirm('cancelar');
+    confirm('<p>De acordo com o contrato de prestação de serviço todo cancelamento com menos de 10 dias de antecedência estará sujeito a cobrança de 50% do valor da reserva. <br>Caso o cancelamento seja realizado com menos de 24h horas a reserva será cobrada em sua totalidade. </p><br>'
+											  '<p>Pagamento realizados por cartão de crédito será estornado em sua fatura, pagamentos em dinheiro será transferido para conta de sua preferência em até 10 dias úteis.</p>'
+											  );
 }
 
 function alterar(id) {
@@ -74,9 +76,9 @@ function centroReserva(item)
 							'<h5 class="card-title">Confira os detalhes do Quarto Luxo</h5>',
 								'<p class="card-text"><small class="text-muted">2 Pessoas - Wifi - TV 32" - Frigobar - Cama Casal King - Calefação - Ar condicionado - Hidro</small></p>',
                                 
-								'<button onclick="popupCancela('+ item.idreserva  +')" type="button" class="btn btn-secondary">Cancelar Reserva</button>',
+								'<button onclick="cancelar('+ item.idreserva +')" type="button" class="btn btn-secondary">Cancelar Reserva</button>',
                                 '&nbsp;',
-                                '<button onclick="popupAltera('+ item.idreserva  +')" type="button" class="btn btn-primary">Alterar Reserva</button>',
+                                '<button onclick="alterar('+ item.idreserva  +')" type="button" class="btn btn-primary">Alterar Reserva</button>',
 						'</div>',
 				    '</div>',        
 				'</div>',
@@ -113,7 +115,7 @@ function popupCancela(id)
     ].join('');
 }
 
-function popupAltera(id)
+/*function popupAltera(id)
 {
     return [
 	
@@ -130,7 +132,7 @@ function popupAltera(id)
 									'</div>'
 								
     ].join('');
-}
+}*/
 
 
 
