@@ -17,12 +17,12 @@ function popularReservas(reservas) {
 }
 
 function htmlReserva(item) {
-    return cabecalhoReserva(item) + centroReserva(item);
+    return cabecalhoReserva(item) + centroReserva(item) + cancelar(item.idreserva);
 }
 
 function cancelar(id) {
 	
-							return['<div class="modal fade" tabindex="-1" role="dialog" aria-hidden="true">',
+						return [	'<div class="modal fade" tabindex="-1" role="dialog" aria-hidden="true">',
 									 '<div class="modal-dialog" role="document">',
 										'<div class="modal-content">',
 										 '<div class="modal-header">',
@@ -40,7 +40,7 @@ function cancelar(id) {
 																					  '</div>',
 										'</div>',
 									  '</div>',
-									'</div>'];
+									'</div>' ].join('');
 	
     confirm('Tem certeza que deseja cancelar?');
 
