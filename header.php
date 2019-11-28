@@ -71,7 +71,7 @@
    <li class="nav-item dropdown" id="clientelogado" style="display:none"> 
         <a class="nav-link dropdown-toggle" href="#" id="linkmenu" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
 		 <i class="fa fa-user-plus"></i>
-		 <span id="nomeuser"></span>
+		 <span class="nomeuser"></span>
         </a>
         <div class="dropdown-menu" id="menufuncionario" aria-labelledby="navbarDropdown">
 			<a class="dropdown-item menufuncionario "  style="display:none" href="cadastraacomodacoes.php">Cadastrar acomodação</a>

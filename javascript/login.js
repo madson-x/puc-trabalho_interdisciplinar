@@ -59,7 +59,7 @@ function info(){
     if  (localStorage.getItem('token')){
         get('info')
         .done(function (resposta){
-        $('#nomeuser').text(resposta.usuario.nome);            
+        $('.nomeuser').text(resposta.usuario.nome);          
         $('#clientelogado').show(); 
         if(resposta.usuario.funcionario){
             $('.menufuncionario').show();
