@@ -88,7 +88,7 @@ function centroReserva(item)
 function popupCancela(item)
 {
     return [
-							confirm('<div class="modal fade"  tabindex="-1" role="dialog" aria-hidden="true">',
+							'<div class="modal fade"  tabindex="-1" role="dialog" aria-hidden="true">',
 									 '<div class="modal-dialog" role="document">',
 										'<div class="modal-content">',
 										 '<div class="modal-header">',
@@ -109,7 +109,7 @@ function popupCancela(item)
 										  '</div>',
 										'</div>',
 									  '</div>',
-									'</div>');
+									'</div>'
     ].join('');
 }
 
@@ -118,7 +118,7 @@ function popupAltera(item)
     return [
 											 '<h5><b> Tem certeza que deseja cancelar?</b></h5>',
 											 '<button href="#" type="submit" data-dismiss="modal" class="btn btn-primary">Não</button>',
-											 '<button onclick="alterar('+ item.idreserva +')" type="button" class="btn btn-secondary">Sim</button>',
+											 '<button onclick="alterar('+ item.idreserva +')" type="button" class="btn btn-secondary">Sim</button>'
 								
     ].join('');
 }
